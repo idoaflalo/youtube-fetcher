@@ -152,7 +152,7 @@ const parseFormats = (info) => {
     return formats;
 };
 
-getFullInfo = async(id, options) => {
+getFullInfo = async(id, options = {}) => {
     let info = await getBasicInfo(id, options);
     const hasManifest =
         info.player_response && info.player_response.streamingData && (
