@@ -4,7 +4,12 @@ This package generates list of youtube video links which you can download or str
 
 ```javascript
 const youtubeFetcher = require("youtube-fetcher-dl");
-youtubeFetcher(youtube_id, [options]).then(console.log);
+
+async function run() {
+    console.log(await youtubeFetcher(youtube_id, [options]));
+}
+
+run();
 
 type options = {
     quality?: 'lowest' | 'highest' | 'highestaudio' | 'lowestaudio' | 'highestvideo' | 'lowestvideo' | string | number;
