@@ -1,4 +1,4 @@
-# youtube-fetcher
+# youtube-fetcher-dl
 
 This package generates list of youtube video links which you can download or stream.
 
