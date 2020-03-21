@@ -3,7 +3,7 @@
 use like this:
 
 ```
-    const youtubeFetcher = require("youtube-fetcher");
+    const youtubeFetcher = require("youtube-fetcher-dl");
     console.log(youtubeFetcher(url, [options]));
 
     type options = {
